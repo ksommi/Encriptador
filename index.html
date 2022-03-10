@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header><h1 class="titulo">Des-Encriptador de texto</h1></header>
+
+    <main class="main">
+      <section class="form box">
+        <form action="" class="container">
+          <h3 for="input-texto">
+            Por favor, ingrese solo letras minúsculas y sin acentos.
+          </h3>
+          <textarea class="text-input" id="input-texto"></textarea>
+          <p>
+            *En caso de no cumplir con las reglas, el mensaje sera devuelto en
+            ese formato.
+          </p>
+          <div class="buttons">
+            <input class="btn" value="encriptar" id="btn-encriptar" />
+            <input class="btn" value="desencriptar" id="btn-desencriptar" />
+          </div>
+        </form>
+      </section>
+
+      <section class="msg box">
+        <div class="container">
+          <h3 id="label-msg">Mensaje devuelto:</h3>
+          <textarea
+            class="text-input"
+            type="text"
+            id="msg"
+            readonly="readonly"
+          ></textarea>
+          <div>
+            <input class="btn" type="submit" value="copiar" id="btn-copy" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Desarrollado por Kevin Sommi</h3>
+      <p>2022</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
