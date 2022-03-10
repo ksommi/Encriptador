@@ -6,7 +6,9 @@ var desencriptarButton = document.querySelector("#btn-desencriptar");
 var mensajeObtenido = document.querySelector("#msg");
 var copiaButton = document.querySelector("#btn-copy");
 
-function encriptar() {
+function encriptar(event) {
+  event.preventDefault();
+
   var contenido = mensaje.value.toLowerCase();
 
   function eliminarTildes(text) {
@@ -25,7 +27,9 @@ function encriptar() {
   mensajeObtenido.value = reemplazar;
 }
 
-function desencriptar() {
+function desencriptar(event) {
+  event.preventDefault();
+
   var contenido = mensaje.value.toLowerCase();
 
   var reemplazar = contenido
